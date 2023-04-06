@@ -154,4 +154,11 @@ main {
   transition: 0.3s ease-out;
 }
 
+.col.success input {
+  border-color: green;
+}
+
+.col.error input {
+  border-color: red;
+}
 /* form/right section end*/
