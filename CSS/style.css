@@ -1,0 +1,157 @@
+@font-face {
+  font-family: Roboto-regular;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+/* global reset */
+* {
+  font-family: Roboto-regular;
+  margin: 0;
+  padding: 0;
+}
+/* global reset */
+
+/* background image */
+body {
+  background-image: url("/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* background image */
+
+main,
+.logo-area,
+.logo-text,
+.form-section,
+.form-header,
+.register-form,
+.col {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo-area,
+.logo-text {
+  justify-content: center;
+}
+
+.logo-text,
+.form-section,
+.form-header,
+.col {
+  flex-direction: column;
+}
+
+.register-form label,
+.register-btn:hover,
+.form-footer p a {
+  color: palevioletred;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+}
+
+/* logo/left section start*/
+
+.logo-section {
+  flex: 1;
+}
+
+.logo-area {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 50%;
+  padding: 20px;
+}
+
+.logo-text {
+  color: white;
+  font-size: 48px;
+}
+
+/* logo/left section end*/
+
+/* form/right section start*/
+
+.form-section {
+  background-color: whitesmoke;
+  justify-content: space-evenly;
+  flex: 2;
+}
+
+.form-header,
+.register-form,
+.form-footer {
+  padding: 40px;
+  padding-right: 30%;
+}
+
+.form-header {
+  gap: 50px;
+}
+
+.form-header h2 {
+  font-size: 36px;
+}
+
+.register-form {
+  background-color: white;
+  justify-content: start;
+  gap: 40px;
+  box-shadow: 0px 5px 10px #888, 0px -2px 10px #888;
+}
+
+.register-form label {
+  text-transform: uppercase;
+}
+
+.register-form input {
+  width: 300px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding-left: 10px;
+}
+
+.register-form input:hover {
+  outline: 1px solid black;
+}
+
+.register-form input:focus::placeholder {
+  color: transparent;
+}
+
+.register-btn {
+  text-align: center;
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: palevioletred;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  border: none;
+}
+
+.register-btn:hover {
+  background-color: white;
+  outline: 1px solid black;
+}
+
+.form-footer p {
+  margin-top: 20px;
+}
+
+.form-footer p a {
+  text-decoration: none;
+}
+
+.form-footer p a:hover {
+  color: black;
+  transition: 0.3s ease-out;
+}
+
+/* form/right section end*/

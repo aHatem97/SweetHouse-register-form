@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SweetHouse</title>
+
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <script src="/JS/script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="logo-section">
+        <div class="logo-area">
+          <img src="/images/logo.png" alt="" class="logo" />
+          <h1 class="logo-text">SweetHouse</h1>
+        </div>
+      </section>
+      <section class="form-section">
+        <div class="form-header">
+          <h2>
+            Do you want to eat the most delicious cakes? Sign up now to get a
+            free sample!
+          </h2>
+          <h2>You know you want to!</h2>
+        </div>
+        <form action="#" method="post" class="register-form">
+          <div class="col">
+            <label for="fname">*First Name</label>
+            <input
+              type="text"
+              id="fname"
+              placeholder="John"
+              minlength="3"
+              maxlength="12"
+              required
+              autofocus
+            />
+          </div>
+
+          <div class="col">
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              placeholder="Smith"
+              minlength="3"
+              maxlength="12"
+            />
+          </div>
+
+          <div class="col">
+            <label for="email">*Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="JohnSmith@hotmail.com"
+              required
+            />
+          </div>
+
+          <div class="col">
+            <label for="phone">*Phone Number</label>
+            <input
+              type="text"
+              id="phone"
+              minlength="8"
+              maxlength="12"
+              placeholder="01005481600"
+              required
+            />
+          </div>
+
+          <div class="col">
+            <label for="password">*Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="At least 8 characters long"
+              minlength="8"
+              maxlength="12"
+              required
+            />
+          </div>
+
+          <div class="col">
+            <label for="confirm-password">*Confirm Password</label>
+            <input
+              type="password"
+              id="confirm-password"
+              placeholder="At least 8 characters long"
+              minlength="8"
+              maxlength="12"
+              required
+            />
+          </div>
+        </form>
+        <div class="form-footer">
+          <button type="submit" class="register-btn">Create Account</button>
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
